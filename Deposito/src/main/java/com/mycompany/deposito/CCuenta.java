@@ -1,17 +1,33 @@
+
 package com.mycompany.deposito;
+
+/**
+ * Una clase para representar círculos situados sobre el plano.
+ * Cada círculo queda determinado por su radio junto con las 
+ * coordenadas de su  centro.
+ * @version 1.1
+ * @author Gines Carmona Rullan
+ */
 
 public class CCuenta {
 
 
-    private String nombre;
-    private String cuenta;
-    private double saldo;
-    private double tipoInterés;
+    private String nombre; //Atributo de la clase
+    private String cuenta; //Atributo de la clase
+    private double saldo; //Atributo de la clase
+    private double tipoInterés; //Atributo de la clase
 
     public CCuenta()
     {
     }
-
+    
+      /** 
+     * Crea un círculo a partir de su origen su radio.
+     * @param nom Nombre del cliente
+     * @param cue cuenta del cliente
+     * @param sal saldo del cliente.
+     * @param tipo tipo de cuenta.
+     */
     public CCuenta(String nom, String cue, double sal, double tipo)
     {
         nombre =nom;
@@ -19,6 +35,39 @@ public class CCuenta {
         saldo=sal;
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getCuenta() {
+        return cuenta;
+    }
+
+    public void setCuenta(String cuenta) {
+        this.cuenta = cuenta;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
+
+    public double getTipoInterés() {
+        return tipoInterés;
+    }
+
+    public void setTipoInterés(double tipoInterés) {
+        this.tipoInterés = tipoInterés;
+    }
+    
+    
     public double estado()
     {
         return saldo;
