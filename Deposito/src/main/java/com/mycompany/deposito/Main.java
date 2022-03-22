@@ -1,11 +1,17 @@
 package com.mycompany.deposito;
 
+/**
+ * Clase Main
+ * @version 1.1
+ * @author Gines Carmona Rullan
+ */
+
 
 import com.mycompany.deposito.CCuenta;
 import java.util.Scanner;
 
 public class Main {
-
+   
     public static void main(String[] args) {
         CCuenta cuenta1;
         double saldoActual;
@@ -23,7 +29,11 @@ public class Main {
         }
     }
     
-    
+   /** 
+     * Clase operativa_cuenta para ingresar una cantidad en la cuenta
+     * @param cuenta Objeto Cuenta
+     * @param cantidad cantidad a ingresar en la cuenta
+     */  
     public static void operativa_cuenta(CCuenta cuenta,float cantidad)throws Exception{
         try {
             cuenta.retirar(cantidad);

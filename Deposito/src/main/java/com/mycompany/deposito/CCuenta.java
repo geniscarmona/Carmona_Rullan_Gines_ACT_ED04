@@ -2,9 +2,6 @@
 package com.mycompany.deposito;
 
 /**
- * Una clase para representar círculos situados sobre el plano.
- * Cada círculo queda determinado por su radio junto con las 
- * coordenadas de su  centro.
  * @version 1.1
  * @author Gines Carmona Rullan
  */
@@ -22,7 +19,7 @@ public class CCuenta {
     }
     
       /** 
-     * Crea un círculo a partir de su origen su radio.
+     * Crea una Cuenta
      * @param nom Nombre del cliente
      * @param cue cuenta del cliente
      * @param sal saldo del cliente.
@@ -72,6 +69,11 @@ public class CCuenta {
     {
         return saldo;
     }
+    
+       /** 
+     * Clase Ingresar sirve para insertar una cantidad de la cuenta
+     * @param cantidad valor a ingresar
+     */
 
     public void ingresar(double cantidad) throws Exception
     {
@@ -79,6 +81,10 @@ public class CCuenta {
             throw new Exception("No se puede ingresar una cantidad negativa");
         saldo = saldo + cantidad;
     }
+     /** 
+     * Clase retirar sirve para retirar una cantidad de la cuenta
+     * @param cantidad valor a ingresar
+     */
 
     public void retirar(double cantidad) throws Exception
     {
